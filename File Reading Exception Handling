@@ -3,11 +3,11 @@ import java.io.*;
 public class FileReadExample {
     public static void main(String[] args) {
         try {
-            [span_0](start_span)FileReader fr = new FileReader("c:/nonexistent/file.txt");[span_0](end_span)
-            [span_1](start_span)BufferedReader br = new BufferedReader(fr);[span_1](end_span)
+            FileReader fr = new FileReader("c:/nonexistent/file.txt");
+            BufferedReader br = new BufferedReader(fr);
             System.out.println(br.readLine());
             br.close();
-        [span_2](start_span)} catch (FileNotFoundException e) {[span_2](end_span)
+         catch (FileNotFoundException e) {
             [span_3](start_span)System.out.println("Error: File not found!");[span_3](end_span)
         } catch (IOException e) {
             System.out.println("Error reading file");
