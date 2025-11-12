@@ -1,19 +1,19 @@
 class InvalidGradeException extends Exception {
-    [span_5](start_span)public InvalidGradeException(String message) {[span_5](end_span)
-        [span_6](start_span)super(message);[span_6](end_span)
+    public InvalidGradeException(String message) { 
+        super(message);
     }
 }
 
 public class GradeChecker {
     public static void main(String[] args) {
         try {
-            [span_7](start_span)int marks = 105;[span_7](end_span)
-            [span_8](start_span)if (marks > 100) {[span_8](end_span)
-                [span_9](start_span)throw new InvalidGradeException("Marks cannot exceed 100!");[span_9](end_span)
+            int marks = 105;
+            if (marks > 100)}
+                throw new InvalidGradeException("Marks cannot exceed 100!");
             }
             System.out.println("Valid marks: " + marks);
-        [span_10](start_span)} catch (InvalidGradeException e) {[span_10](end_span)
-            [span_11](start_span)System.out.println("Exception: " + e.getMessage());[span_11](end_span)
+        } catch (InvalidGradeException e) {
+            System.out.println("Exception: " + e.getMessage()); 
         }
     }
 }
