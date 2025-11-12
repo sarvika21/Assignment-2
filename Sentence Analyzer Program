@@ -1,0 +1,23 @@
+import java.util.Scanner; 
+
+public class SentenceAnalyser {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a sentence:");
+        String sentence = sc.nextLine();
+
+        System.out.println("--- SENTENCE ANALYSIS ---"); 
+        System.out.println("Characters Count: " + sentence.length()); 
+        System.out.println("Lowercase: " + sentence.toLowerCase()); 
+        System.out.println("With underscores: " + sentence.replace(" ", "_"));
+        System.out.println("Contains 'Java': " + sentence.contains("Java")); 
+
+        if (sentence.contains("FUN")) { 
+            int index = sentence.indexOf("FUN"); 
+            System.out.println("Word 'FUN' in lowercase: " +
+                    sentence.substring(index, index + 3).toLowerCase()); 
+        } else {
+            System.out.println("The word 'FUN' was not found in the sentence."); 
+        }
+    }
+}
