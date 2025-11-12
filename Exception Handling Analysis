@@ -1,0 +1,2 @@
+The statement int result = arr[3]/0; attempts to access the element at index 3 of an array that only has indices 0, 1, and 2 This causes an ArrayIndexOutOfBoundsException. 
+This exception occurs before the division by zero operation is even performed Because the error is related to an invalid array index, the control transfers to the catch (ArrayIndexOutOfBoundsException e) block.
