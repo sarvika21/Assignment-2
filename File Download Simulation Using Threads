@@ -1,7 +1,7 @@
 class DownloadPart extends Thread {
     private String part;
 
-    public DownloadPart(String part) {[span_23](end_span)
+    public DownloadPart(String part) {
     this.part = part;
     }
 
@@ -11,7 +11,7 @@ class DownloadPart extends Thread {
             Thread.sleep(2000);
             System.out.println(part + " completed");
         } catch (InterruptedException e) {
-            [span_30](start_span)System.out.println("Download interrupted");
+            (start_span)System.out.println("Download interrupted");
         }
     }
 }
@@ -21,8 +21,8 @@ public class FileDownload {
         DownloadPart part1 = new DownloadPart("Part 1");
         DownloadPart part2 = new DownloadPart("Part 2");
 
-        [span_33](start_span)part1.start();
-        [span_34](start_span)part2.start();
+        (start_span)part1.start();
+        (start_span)part2.start();
 
         try {
             part1.join();
